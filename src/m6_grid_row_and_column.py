@@ -13,7 +13,7 @@ from tkinter import ttk
 def main():
     """ Constructs a GUI that will be used MUCH later to control EV3. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Follow along with the video to make a remote control GUI
+    # Done: 2. Follow along with the video to make a remote control GUI
     # For every grid() method call you will add a row and a column argument
     # -------------------------------------------------------------------------
 
@@ -79,9 +79,25 @@ def main():
     e_button.grid()
     e_button['command'] = lambda: exit()
 
+    left_button.grid(row = 3, column = 0)
+    left_speed_entry.grid(row = 1, column = 0)
+    left_speed_label.grid(row = 0, column = 0)
+
+    forward_button.grid(row = 2, column = 1)
+    stop_button.grid(row = 3, column = 1)
+    back_button.grid(row = 4, column = 1)
+
+    right_button.grid(row = 3, column = 2)
+    right_speed_entry.grid(row = 1, column = 2)
+    right_speed_label.grid(row = 0, column = 2)
+
+    up_button.grid(row = 5, column = 0)
+    down_button.grid(row = 6, column = 0)
+
+    q_button.grid(row = 5, column = 2)
+    e_button.grid(row = 6, column = 2)
+
     root.mainloop()
-
-
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
